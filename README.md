@@ -21,6 +21,7 @@ Project ini bertujuan untuk menyediakan sistem informasi perpustakaan yang moder
    cp .env.example .env
    ```
 2. **Setup DB**
+   
     Buka XAMPP Control Panel, jalankan Apache dan MySQL Akses http://localhost/phpmyadmin di browser dan buat database baru (contoh: db_perpustakaan).
     Buka file .env di text editor, sesuaikan konfigurasi berikut:
    ```DB_CONNECTION=mysql
@@ -30,13 +31,13 @@ Project ini bertujuan untuk menyediakan sistem informasi perpustakaan yang moder
     DB_USERNAME=root
     DB_PASSWORD=
    ```
-3. **Setup PHP & composer**
+4. **Setup PHP & composer**
    ```bash
    composer install
    php artisan key:generate
    php artisan migrate --seed
    ```
-4. **Menjalankan project**
+5. **Menjalankan project**
     ```
     php artisan serve
     ```
