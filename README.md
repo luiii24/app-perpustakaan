@@ -24,11 +24,11 @@ Project ini bertujuan untuk menyediakan sistem informasi perpustakaan yang moder
     Buka XAMPP Control Panel, jalankan Apache dan MySQL Akses http://localhost/phpmyadmin di browser dan buat database baru (contoh: db_perpustakaan).
     Buka file .env di text editor, sesuaikan konfigurasi berikut:
    ```DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=db_perpustakaan
-DB_USERNAME=root
-DB_PASSWORD=
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=db_perpustakaan
+    DB_USERNAME=root
+    DB_PASSWORD=
    ```
 3. **Setup PHP & composer**
    ```bash
@@ -44,5 +44,7 @@ DB_PASSWORD=
 ### Jawaban Refleksi (Perbedaan Model, View, dan Controller):
 
 > **Model** bertugas mengelola struktur data dan komunikasi langsung dengan database MySQL di XAMPP.
+
 > **View** berisi tampilan HTML/Blade yang menyajikan antarmuka visual kepada pengguna, sedangkan.
+
 > **Controller** berfungsi sebagai jembatan yang menerima *request* pengguna, memproses data melalui Model, lalu mengirimkan hasilnya ke View.
