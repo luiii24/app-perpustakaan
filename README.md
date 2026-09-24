@@ -47,4 +47,4 @@ Project ini bertujuan untuk menyediakan sistem informasi perpustakaan yang moder
 
 > **View** berisi tampilan HTML/Blade yang menyajikan antarmuka visual kepada pengguna, sedangkan.
 
-> **Controller** berfungsi sebagai jembatan yang menerima *request* pengguna, memproses data melalui Model, lalu mengirimkan hasilnya ke View.
+> **Controller** berfungsi sebagai jembatan yang menerima *request* pengguna, memproses data melalui Model, lalu mengirimkan hasilnya ke View..
