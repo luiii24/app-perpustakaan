@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="id">
+@extends('layouts.app')
+
+@section('title', 'Daftar Anggota')
+
+@section('content')
     <h1>Daftar Anggota</h1>
 
     <table>
@@ -32,4 +35,4 @@
     </table>
 
     <p><em>Catatan: data di atas masih data dummy (array statis di Controller). Form tambah/edit anggota dan CRUD lengkap anggota baru dibuat mulai Pertemuan 5.</em></p>
-</html>
+@endsection
