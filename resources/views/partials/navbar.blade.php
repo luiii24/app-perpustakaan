@@ -8,6 +8,11 @@
             @endif
             <li><a href="{{ route('members.index') }}" class="{{ request()->routeIs('members.*') ? 'active' : '' }}">Anggota</a></li>
             <li><a href="{{ route('loans.index') }}" class="{{ request()->routeIs('loans.*') ? 'active' : '' }}">Peminjaman</a></li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('profil*') ? 'active' : '' }}" href="{{ route('profile.show') }}">
+                    Profil
+                </a>
+            </li>
         </ul>
         <div class="navbar-user">
             <span>{{ auth()->user()->name }} ({{ ucfirst(auth()->user()->role) }})</span>
